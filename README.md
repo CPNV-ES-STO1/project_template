@@ -10,6 +10,8 @@ Vous recevrez une situation de départ et différentes étapes d'un scénario à
 
 C'est également l'occasion de travailler sur une infrastructure "réaliste" et ainsi vous confronter à des contraintes de performances et de sécurité sur un cloud industriel.
 
+![Overview](./appendices/excalidraw-sto1-overview.svg)
+
 ## Objectifs opérationnels
 
 Le projet sera décomposé en 6 étapes principales:
