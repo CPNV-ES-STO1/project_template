@@ -59,7 +59,9 @@ Note : ces données ne doivent jamais être publiées
 
 ## SLA
 L'infrastructure AWS ne sera disponible que durant les heures de cours uniquement.
+
 Les snapshots des instances et volumes sont assurés par les techniciens.
+
 Pour des demandes de "restore", une issue doit être postée sur votre dépôt github, à l'attention du client.
 
 ## FAQ
