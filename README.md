@@ -50,14 +50,14 @@ Le projet sera décomposé en 6 étapes principales:
 
 Vous recevrez via un partage oneDrive dédié à votre devopsteam :
 
-    * Les accès à la DMZ (ip public + user name + ssh key).
-    * La configuration nécessaire pour la mise en place des tunnels ssh et rdp (private ips, ports and protocols).
-    * Les accès à votre sous-réseau privé:
-      * instance linux (user name, ssh key).
-      * instance windows (user name, pwd).
-    * Une paire de clés pour le cli d'AWS offrant l'accès au bucket du client.
-    * Une paire de clés pour le cli d'AWS offrant l'accès à votre bucket d'équipe pour le travail de migration.
-    * Une paire de clés pour le cli d'AWS offrant les actions permettant de faire des snaphots de vos instances et de vos volumes.
+* Les accès à la DMZ (ip public + user name + ssh key).
+* La configuration nécessaire pour la mise en place des tunnels ssh et rdp (private ips, ports and protocols).
+* Les accès à votre sous-réseau privé:
+  * instance linux (user name, ssh key).
+  * instance windows (user name, pwd).
+* Une paire de clés pour le cli d'AWS offrant l'accès au bucket du client.
+* Une paire de clés pour le cli d'AWS offrant l'accès à votre bucket d'équipe pour le travail de migration.
+* Une paire de clés pour le cli d'AWS offrant les actions permettant de faire des snaphots de vos instances et de vos volumes.
 
 Note : ces données ne doivent jamais être publiées
 
@@ -67,6 +67,27 @@ L'infrastructure AWS ne sera disponible que durant les heures de cours uniquemen
 Les snapshots des instances et volumes sont assurés par les techniciens.
 
 Pour des demandes de "restore", une issue doit être postée sur votre dépôt github, à l'attention du client.
+
+## Livrables
+
+Les devopsteams livrent le contenu suivant:
+
+Sur leur dépôt github:
+
+* Chaque étape de la migration est documentée, en utilisant les modèles de fichiers livrés.
+* Le contenu produit doit permettre, en disposant des pré-requis mentionnés à chaque étape, de pouvoir redéployer la même infrastructure.
+
+Sur leur infrastructure AWS:
+
+* Un snapshot de chaque étape et de chaque machine et de leur volumes.
+* Une infrastructure finale (os y + raid d), nettoyée de toutes les données temporaires liées à la migration.
+
+Sur le partage oneDrive:
+
+* Une capusle vidéo:
+    * 10 min max (15 min pour l'équipe à trois membres)
+    * Tous les membres d'équipes participent (qui peut être produite sur vos environnement locaux)
+    * Décrivant en détail les commandes que vous passez ainsi que le résultat obtenus.
 
 ## FAQ
 
