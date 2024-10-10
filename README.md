@@ -48,7 +48,8 @@ Le projet sera décomposé en 6 étapes principales:
 
 ### Données confidentielles pour l'accès à l'infrastructure
 
-Vous recevrez via un partage oneDrive dédié à votre devopsteam : 
+Vous recevrez via un partage oneDrive dédié à votre devopsteam :
+
     * Les accès à la DMZ (ip public + user name + ssh key).
     * La configuration nécessaire pour la mise en place des tunnels ssh et rdp (private ips, ports and protocols).
     * Les accès à votre sous-réseau privé:
@@ -69,11 +70,11 @@ Pour des demandes de "restore", une issue doit être postée sur votre dépôt g
 
 ## FAQ
 
-* Devons-nous utiliser des profils pour configurer le CLI ?
+### Devons-nous utiliser des profils pour configurer le CLI ?
 
     Oui. Vous recevrez plusieurs paires de clé AWS en fonction des besoins.
 
-* Quel est le contenu (data) à migrer ?
+### Quel est le contenu (data) à migrer ?
 
     Vous aurez environ 4 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
     Ces données vous seront livrées via un bucket S3.
