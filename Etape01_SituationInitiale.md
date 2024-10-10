@@ -5,13 +5,13 @@
 * Situation de départ
 
 |OS |RAID|Nb volumes|Capacité totale|Capacité résiduelle|
-|:--|:-- |:--       |:--            ||
+|:--|:-- |:--       |:--            |:--|
 ||||||
 
 * Situation à atteindre
 
 |OS |RAID|Nb volumes|Capacité totale|Capacité résiduelle|
-|:--|:-- |:--       |:--            ||
+|:--|:-- |:--       |:--            |:--|
 ||||||
 
 
@@ -26,7 +26,9 @@
 
 ## TODO
 
-### Accès à la DMZ
+### Configuration du RAID de départ
+
+#### Mise en place
 
 ```bash
 //TODO INPUT
@@ -36,7 +38,9 @@
 //TODO OUTPUT
 ```
 
-### Accès à l'instance linux
+### Configuration du RAID souhaité
+
+#### Mise en place
 
 ```bash
 //TODO INPUT
@@ -46,7 +50,8 @@
 //TODO OUTPUT
 ```
 
-### Accès l'instance windows
+
+#### Validation technique
 
 ```bash
 //TODO INPUT
@@ -56,85 +61,7 @@
 //TODO OUTPUT
 ```
 
-### Connection internet sortante
-
-```bash
-//TODO INPUT
-```
-
-```bash
-//TODO OUTPUT
-```
-
-### Volumes nécessaires pour la première étape du projet
-
-```bash
-//TODO INPUT
-```
-
-```bash
-//TODO OUTPUT
-```
-
-### Accès aux différents buckets
-
-#### Bucket contenant les données du client
-
-```bash
-//TODO INPUT
-```
-
-```bash
-//TODO OUTPUT
-```
-
-#### Bucket "temporaire" pour la migration
-
-```bash
-//TODO INPUT
-```
-
-```bash
-//TODO OUTPUT
-```
-
-## Installation des dépendances
-
-### CLI d'AWS
-
-#### Sous Windows
-
-```bash
-//TODO INPUT
-```
-
-```bash
-//TODO OUTPUT
-```
-
-#### Sous Linux
-
-```bash
-//TODO INPUT
-```
-
-```bash
-//TODO OUTPUT
-```
-
-### Logiciel RAID
-
-#### Sous Windows
-
-```bash
-//TODO INPUT
-```
-
-```bash
-//TODO OUTPUT
-```
-
-#### Sous Linux
+#### Validation métier
 
 ```bash
 //TODO INPUT
