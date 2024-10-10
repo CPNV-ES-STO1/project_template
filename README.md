@@ -87,7 +87,7 @@ Sur le partage oneDrive:
 * Une capusle vidéo:
     * 10 min max (15 min pour l'équipe à trois membres)
     * Tous les membres d'équipes participent (qui peut être produite sur vos environnement locaux)
-    * Décrivant en détail les commandes que vous passez ainsi que le résultat obtenus.
+    * Décrivant en détail les commandes que vous passez ainsi que le résultat obtenu.
 
 ## FAQ
 
