@@ -16,24 +16,61 @@ Le projet sera décomposé en 5 étapes principales:
 
 |Etape num|Titre                           |Détails|
 |:--      |:--                             |:--    |
-|0        |Configuration des environnements|Prise en main de l'infrastructure cible|
-|1        |Situation intiale|              |Mise en place du premier RAID et intégration des données       |
-|2        |1ère migration                  |Migration RAID a à b       |
-|3        |2ème migration                  |Migration OS x à y + RAID b à c       |
-|4        |3ème migration                  |Migration RAID c à d       |
-|5        |Nettoyage                       |Suppression des configuration et données produite par le travail de migration|
+|0        |[Configuration des environnements](./Etape00_ConfigurationEnvironnement.md)|Prise en main de l'infrastructure cible|
+|1        |[Situation intiale](./Etape01_SituationInitiale.md)          |Mise en place du premier RAID et intégration des données       |
+|2        |[1ère migration](./Etape02_1ereMigration.md)                 |Migration RAID a à b       |
+|3        |[2ème migration](./Etape03_2emeMigration.md)                 |Migration OS x à y + RAID b à c       |
+|4        |[3ème migration](./Etape04_3emeMigration.md)                 |Migration RAID c à d       |
+|5        |[Nettoyage](./Etape05_Nettoyage.md)                          |Suppression des configuration et données produite par le travail de migration|
 
-### FAQ
+## Infrastucture cible
 
-* Devons-nous utiliser des profiles pour configurer le CLI ?
+![InfraCible](./appendices/diagram-export-09-10-2024-20_45_28.svg)
 
-Oui. Vous recevrez des accès différents pour votre bucket utile pour le travail de migration et celui qui exposera les données initiale à reprendre.
+[Récupérer le code eraser](./appendices/eraser.zip)
+
+
+### Informations complémentaires
+
+* La DMZ (public subnet) est commune à toutes les équipes.
+* Pour chaque devopsteam, un sous-réseau vous est dédié.
+    * L'intervalle d'adresse ipv4 est défini comme suit:
+        * 10.0.X.0/28
+        * X mentionnant le numéro de votre équipe
+
+* Le bucket s3 dédié à votre équipe porte le nom suivant:
+    * devopsteamXX.sto1.cpnv.ch
+
+### Données confidentielles pour l'accès à l'infrastructure
+
+Un partage oneDrive par équipe vous livrera : 
+    * Les accès à la DMZ (ip public + user name + ssh key).
+    * La configuration nécessaire pour la mise en place des tunnels ssh et rdp (private ip, port and protocols).
+    * Les accès à sous-réseau privé:
+      * instance linux (user name, ssh key).
+      * instance windows (user name, pwd).
+
+    * Paire de clé pour le cli d'AWS offrant l'accès au bucket du client.
+    * Paire de clé pour le cli d'AWS offrant l'accès à votre bucket d'équipe pour le travail de migration.
+    * Paire de clé pour le cli d'AWS offrant les actions permettant de faire des snaphots de vos instances et de vos volumes.
+
+Note : ces données ne doivent jamais être publiées
+
+
+## SLA
+L'infrastructure AWS ne sera disponible que durant les heures de cours uniquement.
+Les snapshots des instances et volumes sont assurés par les techniciens.
+Pour des demandes de "restore", une issue doit être postée sur votre dépôt github, à l'attention du client.
+
+## FAQ
+
+* Devons-nous utiliser des profils pour configurer le CLI ?
+
+    Oui. Vous recevrez des accès différents pour votre bucket utile pour le travail de migration et celui qui exposera les données initiale à reprendre.
 
 * Quel est le contenu (data) à migrer ?
 
-Vos aurez environ 4 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
-
-Ces données vous seront livrées via un bucket S3.
-
-Les données seront un mélange de différents types, tailles ordonnées dans une hiérarchie à plusieurs niveaux.
+    Vous aurez environ 4 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
+    Ces données vous seront livrées via un bucket S3.
+    Les données seront un mélange de différents types, tailles ordonnées dans une hiérarchie à plusieurs niveaux.
 
