@@ -23,7 +23,7 @@ Le projet sera décomposé en 6 étapes principales:
 |4        |[3ème migration](./Etape04_3emeMigration.md)                 |Migration RAID c à d       |
 |5        |[Nettoyage](./Etape05_Nettoyage.md)                          |Suppression des configurations et données produites par le travail de migration|
 
-![Overview](./appendices/excalidraw-sto1-overview.svg)
+![Overview](./appendices/excalidraw-sto1-project-overview.svg)
 
 ## Infrastucture cible
 
