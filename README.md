@@ -27,7 +27,7 @@ Le projet sera décomposé en 6 étapes principales:
 
 ## Infrastucture cible
 
-![InfraCible](./appendices/diagram-export-09-10-2024-20_45_28.svg)
+![InfraCible](./appendices/diagram-export.svg)
 
 [Récupérer le code eraser](./appendices/eraser.zip)
 
@@ -100,3 +100,7 @@ Sur le partage oneDrive:
     Vous aurez environ 4 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
     Ces données vous seront livrées via un bucket S3.
     Les données seront un mélange de différents types, tailles ordonnées dans une hiérarchie à plusieurs niveaux.
+
+### Pouvons-nous utiliser autant de volumes que nous le désirons ?
+
+    Il vous est demandé d'utiliser le moins de moyens possible pour chaque étape.
