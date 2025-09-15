@@ -1,12 +1,12 @@
 # README
 
-Projet STO1 - 2024-2025
+Projet STO1 - 2025.2026
 
 ## Intention pédagogique
 
-Afin de réaliser une révision ainsi qu'un approfondissement des connaissances et compétences acquises durant le module, il vous est proposé de réaliser un projet en équipe de 2 ou 3 techniciens.
+Afin d'évaluer les compétences acquises durant le module, un projet en équipe de 2 ou 3 techniciens.
 
-Vous recevrez une situation de départ et différentes étapes d'un scénario à réaliser. Des données vous seront confiées en début de projet. Il s'agira, à l'aide des différentes technologiques que nous avons vues, réaliser des migrations entre différents RAIDs et différents systèmes d'exploitation afin d'amener les données à bon "port".
+Vous recevrez une situation de départ et différentes étapes d'un scénario à réaliser. Des données vous seront confiées en début de projet. Il s'agira, à l'aide des différentes technologiques que nous avons vues, de réaliser des migrations entre différents RAIDs et différents systèmes d'exploitation afin d'amener les données à bon "port".
 
 C'est également l'occasion de travailler sur une infrastructure "réaliste" et ainsi vous confronter à des contraintes de performances et de sécurité sur un cloud industriel.
 
@@ -93,14 +93,14 @@ Sur le partage oneDrive:
 
 ### Devons-nous utiliser des profils pour configurer le CLI ?
 
-    Oui. Vous recevrez plusieurs paires de clé AWS en fonction des besoins.
+Oui. Vous recevrez plusieurs paires de clé AWS en fonction des besoins.
 
 ### Quel est le contenu (data) à migrer ?
 
-    Vous aurez environ 4 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
-    Ces données vous seront livrées via un bucket S3.
-    Les données seront un mélange de différents types, tailles ordonnées dans une hiérarchie à plusieurs niveaux.
+Vous aurez environ 4 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
+Ces données vous seront livrées via un bucket S3.
+Les données seront un mélange de différents types, tailles ordonnées dans une hiérarchie à plusieurs niveaux.
 
 ### Pouvons-nous utiliser autant de volumes que nous le désirons ?
 
-    Il vous est demandé d'utiliser le moins de moyens possible pour chaque étape.
+    Il vous est demandé d'utiliser le moins de moyens possible pour chaque étape
