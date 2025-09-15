@@ -43,8 +43,10 @@ Le projet sera décomposé en 6 étapes principales:
 
 * Le bucket s3 dédié à votre équipe porte le nom suivant:
     * devopsteamXX.sto1.cpnv.ch
-* Le bucket s3 livré par le client porte le nom suivant:
-    * data.sto1.cpnv.ch
+
+* Le bucket s3 livré (4Go de données) par le client porte le nom suivant:
+    * sto1-project-data
+    * Pour récupérer les données, utilisez [la commande "sync"](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html)
 
 ### Données confidentielles pour l'accès à l'infrastructure
 
