@@ -29,7 +29,7 @@ Le projet sera décomposé en 6 étapes principales:
 
 ![InfraCible](./appendices/diagram-export.svg)
 
-[Récupérer le code eraser](./appendices/eraser.zip)
+[Récupérer le code eraser](./appendices/infra.eraserdiagram)
 
 ### Informations complémentaires
 
