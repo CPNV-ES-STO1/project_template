@@ -1,0 +1,21 @@
+ADMINSYS [icon: user]
+CLOUD[icon: cloud]
+S3 [icon: aws-simple-storage-service]
+
+VmWareSubnet [icon: vmware] {
+  V-ROUTER[icon: router]
+  FILESRV-OSX[icon: virtual-machine]
+  RAID-A-B[icon: storage]
+  FILESRV-OSY[icon: virtual-machine]
+  RAID-C-D[icon: storage]
+}
+
+ADMINSYS - V-ROUTER : SSH, RDP
+V-ROUTER - FILESRV-OSX
+V-ROUTER - FILESRV-OSY
+FILESRV-OSX - RAID-A-B : DAS
+FILESRV-OSY - RAID-C-D : DAS
+FILESRV-OSX - CLOUD : HTTPS
+FILESRV-OSY - CLOUD : HTTPS
+CLOUD - S3 : HTTPS
+CLOUD - S3 : HTTPS
