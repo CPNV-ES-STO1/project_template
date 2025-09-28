@@ -41,7 +41,7 @@ Le projet sera décomposé en 6 étapes principales:
 
 * Les buckets s3 à utiliser sont les mêmes que ceux pour les laboratories.
 
-* Le bucket s3 livré (10 GBs de données) par le client porte le nom suivant:
+* Le bucket s3 livré (15 GBs de données) par le client porte le nom suivant:
     * sto1-project-data
     * Pour récupérer les données, utilisez [la commande "sync"](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html)
 
@@ -69,12 +69,14 @@ Sur le partage oneDrive (que vous créez et partagez avec l'enseignant:
 
 |Critères|Points|
 |:--|:--|
-|La vidéo démontre l'entièreté du projet| 3pts * 5étapes|
-|Les commandes présentées sont similaires à celles de la documentation.| 5pts * 5étapes|
+|La vidéo démontre l'entièreté du projet| 3pts * 5étapes = 15pts|
+|Les commandes présentées sont similaires à celles de la documentation.| 5pts * 5étapes = 25pts|
 |Les preuves techniques ont été faites pour valider le bon fonctionnement des RAID. |20pts|
 |Les preuves métiers ont été faites pour valider que les données n'ont pas été altérées. |20pts|
 |Lien entre analyse et implémentation (validation et/ou retour d'expérience). |20pts|
 |Utilisation des moyens a été limitée au minimum nécessaire.|15pts|
+
+La note du projet comptera (pondération) pour 
 
 ---
 
@@ -86,7 +88,7 @@ Oui.
 
 ### Quel est le contenu (data) à migrer ?
 
-Vous aurez environ 10 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
+Vous aurez environ 15 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
 Ces données vous seront livrées via un bucket S3.
 Les données seront un mélange de différents types, tailles ordonnées dans une hiérarchie à plusieurs niveaux. Il est possible que certains fichiers ne soient pas utilisable (image corrompue).
 
