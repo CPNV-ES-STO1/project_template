@@ -33,16 +33,7 @@ Le projet sera décomposé en 6 étapes principales:
 
 ### Informations complémentaires
 
-* La DMZ (public subnet) est commune à toutes les devopsteams.
-  * Accès uniquement via le protocle SSH.
-  * Chaque devopteam dispose d'un accès privé et limité.
-* Un sous-réseau privé par devopsteam est également disponible.
-    * L'intervalle d'adresse ipv4 est définie comme suit:
-        * 10.0.X.0/28.
-        * X mentionnant le numéro de votre équipe.
-
-* Le bucket s3 dédié à votre équipe porte le nom suivant:
-    * devopsteamXX.sto1.cpnv.ch
+* Les buckets s3 à utiliser sont les mêmes que ceux pour les laboratories.
 
 * Le bucket s3 livré (4Go de données) par le client porte le nom suivant:
     * sto1-project-data
