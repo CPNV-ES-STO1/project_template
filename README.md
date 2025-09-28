@@ -10,6 +10,8 @@ Vous recevrez une situation de départ et différentes étapes d'un scénario à
 
 C'est également l'occasion de travailler sur une infrastructure "réaliste" et ainsi vous confronter à des contraintes de performances et de sécurité sur un cloud industriel.
 
+---
+
 ## Objectifs opérationnels
 
 Le projet sera décomposé en 6 étapes principales:
@@ -25,41 +27,25 @@ Le projet sera décomposé en 6 étapes principales:
 
 ![Overview](./appendices/excalidraw-sto1-project-overview.svg)
 
+---
+
 ## Infrastucture cible
 
 ![InfraCible](./appendices/diagram-export.svg)
 
 [Récupérer le code eraser](./appendices/infra.eraserdiagram)
 
+---
+
 ### Informations complémentaires
 
 * Les buckets s3 à utiliser sont les mêmes que ceux pour les laboratories.
 
-* Le bucket s3 livré (4Go de données) par le client porte le nom suivant:
+* Le bucket s3 livré (10 GBs de données) par le client porte le nom suivant:
     * sto1-project-data
     * Pour récupérer les données, utilisez [la commande "sync"](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html)
 
-### Données confidentielles pour l'accès à l'infrastructure
-
-Vous recevrez via un partage oneDrive dédié à votre devopsteam :
-
-* Les accès à la DMZ (ip public + user name + ssh key).
-* La configuration nécessaire pour la mise en place des tunnels ssh et rdp (private ips, ports and protocols).
-* Les accès à votre sous-réseau privé:
-  * instance linux (user name, ssh key).
-  * instance windows (user name, pwd).
-* Une paire de clés pour le cli d'AWS offrant l'accès au bucket du client.
-* Une paire de clés pour le cli d'AWS offrant l'accès à votre bucket d'équipe pour le travail de migration.
-* Une paire de clés pour le cli d'AWS offrant les actions permettant de faire des snaphots de vos instances et de vos volumes.
-
-Note : ces données ne doivent jamais être publiées
-
-## SLA
-L'infrastructure AWS ne sera disponible que durant les heures de cours uniquement.
-
-Les snapshots des instances et volumes sont assurés par les techniciens.
-
-Pour des demandes de "restore", une issue doit être postée sur votre dépôt github, à l'attention du client.
+---
 
 ## Livrables
 
@@ -67,33 +53,46 @@ Les devopsteams livrent le contenu suivant:
 
 Sur leur dépôt github:
 
-* Chaque étape de la migration est documentée, en utilisant les modèles de fichiers livrés.
+* Chaque étape de la migration est documentée, en utilisant les modèles de fichiers livrés (les dessins d'infrastructure).
 * Le contenu produit doit permettre, en disposant des pré-requis mentionnés à chaque étape, de pouvoir redéployer la même infrastructure.
 
-Sur leur infrastructure AWS:
-
-* Un snapshot de chaque étape et de chaque machine et de leur volumes.
-* Une infrastructure finale (os y + raid d), nettoyée de toutes les données temporaires liées à la migration.
-
-Sur le partage oneDrive:
+Sur le partage oneDrive (que vous créez et partagez avec l'enseignant:
 
 * Une capusle vidéo:
-    * 10 min max (15 min pour l'équipe à trois membres)
-    * Tous les membres d'équipes participent (qui peut être produite sur vos environnement locaux)
+    * d'une durée de 10 min max (15 min pour l'équipe à trois membres).
+    * construite par tous les membres de l'équipe.
     * Décrivant en détail les commandes que vous passez ainsi que le résultat obtenu.
+
+--
+
+## Grille d'évaluation
+
+|Critères|Points|
+|:--|:--|
+|La vidéo démontre l'entièreté du projet| 3pts * 5étapes|
+|Les commandes présentées sont similaires à celles de la documentation.| 5pts * 5étapes|
+|Les preuves techniques ont été faites pour valider le bon fonctionnement des RAID. |20pts|
+|Les preuves métiers ont été faites pour valider que les données n'ont pas été altérées. |20pts|
+|Lien entre analyse et implémentation (validation et/ou retour d'expérience). |20pts|
+|Utilisation des moyens a été limitée au minimum nécessaire.|15pts|
+
+---
 
 ## FAQ
 
 ### Devons-nous utiliser des profils pour configurer le CLI ?
 
-Oui. Vous recevrez plusieurs paires de clé AWS en fonction des besoins.
+Oui.
 
 ### Quel est le contenu (data) à migrer ?
 
-Vous aurez environ 4 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
+Vous aurez environ 10 Go de données à intégrer (étape 01) et à migrer tout au long des étapes de modification de l'infrastructure.
 Ces données vous seront livrées via un bucket S3.
-Les données seront un mélange de différents types, tailles ordonnées dans une hiérarchie à plusieurs niveaux.
+Les données seront un mélange de différents types, tailles ordonnées dans une hiérarchie à plusieurs niveaux. Il est possible que certains fichiers ne soient pas utilisable (image corrompue).
 
 ### Pouvons-nous utiliser autant de volumes que nous le désirons ?
 
-    Il vous est demandé d'utiliser le moins de moyens possible pour chaque étape
+Il vous est demandé d'utiliser le moins de moyens possible pour chaque étape.
+   * Le moins de disque
+   * Le moins d'opérations (les commandes pour valider, vérifier ne comptent pas dans le nombre)
+   * Le moins de bande-passante (votre S3 ne doit être utilisé que si une migration n'est pas possible)
