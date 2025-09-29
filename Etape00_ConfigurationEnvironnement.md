@@ -10,16 +10,6 @@
 
 ## Valider les accès à l'infrastructure
 
-### Accès à la DMZ
-
-```bash
-//TODO INPUT
-```
-
-```bash
-//TODO OUTPUT
-```
-
 ### Accès à l'instance linux
 
 ```bash
@@ -107,6 +97,28 @@
 ```
 
 ### Logiciel RAID
+
+#### Sous Windows
+
+```bash
+//TODO INPUT
+```
+
+```bash
+//TODO OUTPUT
+```
+
+#### Sous Linux
+
+```bash
+//TODO INPUT
+```
+
+```bash
+//TODO OUTPUT
+```
+
+### Language de scripting
 
 #### Sous Windows
 
