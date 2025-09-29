@@ -51,20 +51,33 @@ Les devopsteams livrent le contenu suivant:
 
 *Dépôt github*
 
-   * Chaque étape de la migration est documentée, en utilisant les modèles de fichiers livrés.
-   * La documentation technique, dédiée à un publique avertit, de pouvoir reproduire la même migration.
+* Chaque étape de la migration est documentée, en utilisant les modèles de fichiers livrés.
+* La documentation technique, dédiée à un publique avertit, de pouvoir reproduire la même migration.
 
 *Une caspule vidéo*
 
-    * De 15 min max.
-    * Votre écran et partagé en deux
-       * La première moitié présente la documentation github
-       * La seconde moitié présente l'accès soit en RDP, soit en SSH le serveur de fichier et le résultat des commandes.
-       * (inutile de filmer votre visage)
-    * Construite par tous les membres de l'équipe.
-    * Prenez le temps de décrire chacune des commandes et d'expliquer le comportement de l'OS, du RAID.
+ * De 15 min max.
+ * Votre écran et partagé en deux
+    * La première moitié présente la documentation github
+    * La seconde moitié présente l'accès soit en RDP, soit en SSH le serveur de fichier et le résultat des commandes.
+    * (inutile de filmer votre visage)
+ * Construite par tous les membres de l'équipe.
+ * Prenez le temps de décrire chacune des commandes et d'expliquer le comportement de l'OS, du RAID.
 
 --
+
+## RoadMap
+
+Voici le déroulement du projet ainsi que les délais à respecter:
+
+|Délai|Livrable|
+|:--|:--|
+|Lundi, 29-SEP-2025, 18h00|Le dépôt de l'équipe a été créé et partagée avec l'enseignant.|
+||Une discussion sur Teams a été initialisée et implique tous les membres de l'équipe, ainsi que l'enseignant.|
+||L'analyse pour chacune des étapes a été publiée. Une notification dans le canal teams est adressée à l'enseignant.|
+|Lundi, 27-OCT-2025, 21h00|Le dépôt de l'équipe est à jour.|
+||La vidéo a été partagée via un lien oneDrive.|
+||Une notification dans le canal teams est adressée à l'enseignant, annonçant la fin du projet.|
 
 ## Grille d'évaluation
 
@@ -78,10 +91,9 @@ Les devopsteams livrent le contenu suivant:
 |Utilisation des moyens a été limitée au minimum nécessaire.|15pts|
 |Un état clair du projet est présenté|15 pts|
 |Les problèmes techniques non résolus sont documentés (issues)|15 pts|
+|Qualité du travail collaboratif au sein de l'équipe, tout comme avec l'enseignant.|20 pts|
 
 La note du projet comptera (pondération) pour 50% du module.
-
-Si des tensions dans l'équipe survienent et empêche la collaboration, venez m'en parler suffisamment tôt !
 
 ---
 
