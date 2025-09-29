@@ -1,6 +1,6 @@
 # README
 
-Projet STO1 - 2025.2026
+Projet STO1
 
 ## Intention pédagogique
 
