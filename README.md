@@ -4,11 +4,9 @@ Projet STO1 - 2025.2026
 
 ## Intention pédagogique
 
-Afin d'évaluer les compétences acquises durant le module, un projet en équipe de 2 ou 3 techniciens.
+Afin d'évaluer les compétences acquises durant le module, un projet en équipe de 2 techniciens vous est proposé.
 
 Vous recevrez une situation de départ et différentes étapes d'un scénario à réaliser. Des données vous seront confiées en début de projet. Il s'agira, à l'aide des différentes technologiques que nous avons vues, de réaliser des migrations entre différents RAIDs et différents systèmes d'exploitation afin d'amener les données à bon "port".
-
-C'est également l'occasion de travailler sur une infrastructure "réaliste" et ainsi vous confronter à des contraintes de performances et de sécurité sur un cloud industriel.
 
 ---
 
@@ -39,11 +37,11 @@ Le projet sera décomposé en 6 étapes principales:
 
 ### Informations complémentaires
 
-* Les buckets s3 à utiliser sont les mêmes que ceux pour les laboratories.
+* Les buckets s3 à utiliser sont les mêmes que ceux pour les laboratories. Cela étant dit, ne vous échangez pas les clés d'accès. Je peux au besoin adapter les droits d'accès pour vos collègues.
 
 * Le bucket s3 livré (15 GBs de données) par le client porte le nom suivant:
     * sto1-project-data
-    * Pour récupérer les données, utilisez [la commande "sync"](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html)
+    * [Pour récupérer les données](https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html)
 
 ---
 
@@ -51,17 +49,20 @@ Le projet sera décomposé en 6 étapes principales:
 
 Les devopsteams livrent le contenu suivant:
 
-Sur leur dépôt github:
+*Dépôt github*
 
-* Chaque étape de la migration est documentée, en utilisant les modèles de fichiers livrés (les dessins d'infrastructure).
-* Le contenu produit doit permettre, en disposant des pré-requis mentionnés à chaque étape, de pouvoir redéployer la même infrastructure.
+   * Chaque étape de la migration est documentée, en utilisant les modèles de fichiers livrés.
+   * La documentation technique, dédiée à un publique avertit, de pouvoir reproduire la même migration.
 
-Sur le partage oneDrive (que vous créez et partagez avec l'enseignant:
+*Une caspule vidéo*
 
-* Une capusle vidéo:
-    * d'une durée de 10 min max (15 min pour l'équipe à trois membres).
-    * construite par tous les membres de l'équipe.
-    * Décrivant en détail les commandes que vous passez ainsi que le résultat obtenu.
+    * De 15 min max.
+    * Votre écran et partagé en deux
+       * La première moitié présente la documentation github
+       * La seconde moitié présente l'accès soit en RDP, soit en SSH le serveur de fichier et le résultat des commandes.
+       * (inutile de filmer votre visage)
+    * Construite par tous les membres de l'équipe.
+    * Prenez le temps de décrire chacune des commandes et d'expliquer le comportement de l'OS, du RAID.
 
 --
 
@@ -75,8 +76,12 @@ Sur le partage oneDrive (que vous créez et partagez avec l'enseignant:
 |Les preuves métiers ont été faites pour valider que les données n'ont pas été altérées. |20pts|
 |Lien entre analyse et implémentation (validation et/ou retour d'expérience). |20pts|
 |Utilisation des moyens a été limitée au minimum nécessaire.|15pts|
+|Un état clair du projet est présenté|15 pts|
+|Les problèmes techniques non résolus sont documentés (issues)|15 pts|
 
-La note du projet comptera (pondération) pour 
+La note du projet comptera (pondération) pour 50% du module.
+
+Si des tensions dans l'équipe survienent et empêche la collaboration, venez m'en parler suffisamment tôt !
 
 ---
 
