@@ -71,6 +71,10 @@
 //TODO OUTPUT
 ```
 
+## Problèmes techniques non-résolus
+
+//TODO ajouter ici les liens pointant vers les issues concernées
+
 ## Feedback
 
 //TODO expliquer le retour d'expérience (erreurs, comportement inattendu, changement de stratégies)
