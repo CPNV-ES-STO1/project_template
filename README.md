@@ -112,6 +112,6 @@ Les données seront un mélange de différents types, tailles ordonnées dans un
 ### Pouvons-nous utiliser autant de volumes que nous le désirons ?
 
 Il vous est demandé d'utiliser le moins de moyens possible pour chaque étape.
-   * Le moins de disque
-   * Le moins d'opérations (les commandes pour valider, vérifier ne comptent pas dans le nombre)
-   * Le moins de bande-passante (votre S3 ne doit être utilisé que si une migration n'est pas possible)
+   * Nb de disques vs volumes.
+   * Les opérations à réaliser (les commandes pour valider, vérifier ne comptent pas dans le nombre. Faites-en donc autant que utile.)
+   * Bande passante (utiliser les S3 avec parcimonie)
